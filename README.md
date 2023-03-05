@@ -7,9 +7,9 @@
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-ai-chat-app%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-ai-chat-app/job/main/)
 [![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fai-chat-app%2Flatest-main%2Fci-status.yml)](https://ci-tests.imagegenius.io/ai-chat-app/latest-main/index.html)
 
-Open Source, Self-Hosted Chat GPT APP
+Open Source, Self-Hosted Chat GPT app
 
-[![ai-chat-app]()](https://github.com/bitswired/ai-chat-app)
+[![ai-chat-app](https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/ai-chat-app.png)](https://github.com/bitswired/ai-chat-app)
 
 ## Supported Architectures
 
@@ -27,7 +27,9 @@ This image supports the following architectures:
 
 ## Application Setup
 
-testing
+The WebUI can be accessed at `http://your-ip:3000`, you must specify an OpenAI API Key in settings before using, go to `http://your-ip:3000/settings`, enter the API key, and press save.
+
+This app is brand new, hence it is buggy. I need to create a new chat via the `Templates`, then I can start to make other chats.
 
 ## Usage
 
@@ -46,7 +48,6 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - OPENAI_API_KEY=
     volumes:
       - path_to_appdata:/config
     ports:
@@ -62,7 +63,6 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
-  -e OPENAI_API_KEY= \
   -p 3000:3000 \
   -v path_to_appdata:/config \
   --restart unless-stopped \
@@ -80,7 +80,6 @@ To configure the container, pass variables at runtime using the format `<externa
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e OPENAI_API_KEY=` | OpenAI API Key |
 | `-v /config` | Contains the database |
 
 ## Umask for running applications
