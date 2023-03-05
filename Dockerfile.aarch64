@@ -13,7 +13,8 @@ ENV DATABASE_URL="file:/config/db.sqlite"
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
-    git && \  
+    git \
+    npm && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     yarn && \
@@ -27,8 +28,9 @@ RUN \
   echo "**** build server ****" && \
   yarn && \
   yarn prisma migrate deploy && \
-  yarn build && \
-  yarn install && \
+  npm ci && \
+  npm run build && \
+  npm prune --omit=dev --omit=optional && \
   yarn cache clean --force && \
   echo "**** cleanup ****" && \
   apk del --purge \
