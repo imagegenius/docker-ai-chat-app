@@ -26,7 +26,6 @@ RUN \
   git checkout ${APP_VERSION} && \
   echo "**** build server ****" && \
   npm install && \
-  npx prisma migrate deploy && \
   npm ci && \
   npm run build && \
   npm prune --omit=dev --omit=optional && \

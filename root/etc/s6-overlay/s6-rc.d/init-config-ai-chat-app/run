@@ -1,7 +1,11 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
+# initialise database
+cd /app/ai-chat-app
+npx prisma migrate deploy &>/dev/null
+
 # permissions
 chown -R abc:abc \
-	/config \
-	/app
+    /config \
+    /app
