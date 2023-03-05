@@ -28,12 +28,16 @@ RUN \
   yarn && \
   yarn prisma migrate deploy && \
   yarn build && \
+  yarn install && \
+  yarn cache clean --force && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
   rm -rf \
     /tmp/* \
-    /root/*
+    /root/.cache
+
+ENV HOME="/config"
 
 # copy local files
 COPY root/ /
