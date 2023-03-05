@@ -1,0 +1,26 @@
+---
+
+# jenkins variables
+project_name: docker-ai-chat-app
+external_type: github_commit
+release_type: stable
+release_tag: latest
+ig_branch: main
+repo_vars:
+  - EXT_GIT_BRANCH = 'main'
+  - EXT_USER = 'bitswired'
+  - EXT_REPO = 'ai-chat-app'
+  - BUILD_VERSION_ARG = 'APP_VERSION'
+  - IG_USER = 'imagegenius'
+  - IG_REPO = 'docker-ai-chat-app'
+  - CONTAINER_NAME = 'ai-chat-app'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH = 'true'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3000'
+  - CI_SSL = 'false'
+  - CI_DELAY = '30'
+  - CI_DOCKERENV = 'OPENAI_API_KEY="openaiapikey'
+  - CI_AUTH = ''
+  - CI_WEBPATH = ''

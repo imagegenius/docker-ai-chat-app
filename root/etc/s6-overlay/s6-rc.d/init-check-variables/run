@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+VARIABLES=("OPENAI_API_KEY")
+MESSAGES=("No OpenAI API Key has been specified in the 'OPENAI_API_KEY' variable. (see <here>)")
+
+for i in ${!VARIABLES[@]}; do
+	if [ -z "${!VARIABLES[$i]}" ]; then
+		echo "Error: ${MESSAGES[$i]}"
+		sleep infinity
+	fi
+done

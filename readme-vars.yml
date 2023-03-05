@@ -1,0 +1,48 @@
+---
+
+# project information
+project_name: ai-chat-app
+project_url: "https://github.com/bitswired/ai-chat-app"
+project_logo: ""
+project_blurb: "Open Source, Self-Hosted Chat GPT APP"
+project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
+project_blurb_optional_extras_enabled: false
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+param_usage_include_net: false
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "Australia/Melbourne", desc: "Specify a timezone to use eg. Australia/Melbourne." }
+  - { env_var: "OPENAI_API_KEY", env_value: "", desc: "OpenAI API Key" }
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "path_to_appdata", desc: "Contains the database" }
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "3000", internal_port: "3000", port_desc: "WebUI Port" }
+param_device_map: false
+cap_add_param: false
+
+# optional container parameters
+opt_param_usage_include_env: false
+opt_param_usage_include_vols: false
+opt_param_usage_include_ports: false
+opt_param_device_map: false
+opt_cap_add_param: false
+optional_block_1: false
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  testing
+
+# changelog
+changelogs:
+  - { date: "05.03.23:", desc: "Initial Release." }
