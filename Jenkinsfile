@@ -28,7 +28,7 @@ pipeline {
     CI_PORT = '3000'
     CI_SSL = 'false'
     CI_DELAY = '30'
-    CI_DOCKERENV = 'OPENAI_API_KEY="openaiapikey'
+    CI_DOCKERENV = ''
     CI_AUTH = ''
     CI_WEBPATH = ''
   }
@@ -332,7 +332,7 @@ pipeline {
           --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
           --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
           --label \"org.opencontainers.image.title=Ai-chat-app\" \
-          --label \"org.opencontainers.image.description=Open Source, Self-Hosted Chat GPT APP\" \
+          --label \"org.opencontainers.image.description=Open Source, Self-Hosted Chat GPT app\" \
           --no-cache --pull -t ${GITHUBIMAGE}:${META_TAG} --platform=linux/amd64 \
           --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
       }
@@ -361,7 +361,7 @@ pipeline {
               --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
               --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.title=Ai-chat-app\" \
-              --label \"org.opencontainers.image.description=Open Source, Self-Hosted Chat GPT APP\" \
+              --label \"org.opencontainers.image.description=Open Source, Self-Hosted Chat GPT app\" \
               --no-cache --pull -t ${GITHUBIMAGE}:amd64-${META_TAG} --platform=linux/amd64 \
               --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
           }
@@ -387,7 +387,7 @@ pipeline {
               --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
               --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.title=Ai-chat-app\" \
-              --label \"org.opencontainers.image.description=Open Source, Self-Hosted Chat GPT APP\" \
+              --label \"org.opencontainers.image.description=Open Source, Self-Hosted Chat GPT app\" \
               --no-cache --pull -f Dockerfile.aarch64 -t ${GITHUBIMAGE}:arm64v8-${META_TAG} --platform=linux/arm64 \
               --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
             sh '''docker tag ${GITHUBIMAGE}:arm64v8-${META_TAG} ghcr.io/imagegenius/igdev-buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER}
