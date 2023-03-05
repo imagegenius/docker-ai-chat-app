@@ -13,11 +13,10 @@ ENV DATABASE_URL="file:/config/db.sqlite"
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
-    git \
-    npm && \  
+    git && \  
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    yarn && \
+    npm && \
   echo "**** install ai-chat-app ****" && \
   if [ -z ${APP_VERSION+x} ]; then \
     APP_VERSION=$(curl -sL "https://api.github.com/repos/bitswired/ai-chat-app/commits?ref=main" | jq -r '.[0].sha' | cut -c1-8); \
@@ -26,20 +25,23 @@ RUN \
   cd /app/ai-chat-app && \
   git checkout ${APP_VERSION} && \
   echo "**** build server ****" && \
-  yarn && \
-  yarn prisma migrate deploy && \
+  npm install && \
+  npx prisma migrate deploy && \
   npm ci && \
   npm run build && \
   npm prune --omit=dev --omit=optional && \
-  yarn cache clean --force && \
+  npm cache clean --force && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
   rm -rf \
     /tmp/* \
+    /root/.npm \
     /root/.cache
 
-ENV HOME="/config"
+# environment settings
+ENV NODE_ENV="production" \
+  HOME="/config"
 
 # copy local files
 COPY root/ /
