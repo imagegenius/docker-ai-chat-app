@@ -31,6 +31,7 @@ NAME                                               VERSION                      
 @mantine/core                                      6.0.0                                               npm     
 @mantine/form                                      6.0.0                                               npm     
 @mantine/hooks                                     6.0.0                                               npm     
+@mantine/modals                                    6.0.0                                               npm     
 @mantine/next                                      6.0.0                                               npm     
 @mantine/prism                                     6.0.0                                               npm     
 @mantine/spotlight                                 6.0.0                                               npm     
@@ -477,6 +478,7 @@ spdx-license-ids                                   3.0.11                       
 ssl_client                                         1.35.0-r29                                          apk     
 ssri                                               10.0.0                                              npm     
 ssri                                               9.0.1                                               npm     
+string-template                                    1.0.0                                               npm     
 string-width                                       4.2.3                                               npm     
 string_decoder                                     0.10.31                                             npm     
 string_decoder                                     1.1.1                                               npm     
@@ -540,6 +542,6 @@ xz-libs                                            5.2.9-r0                     
 yallist                                            4.0.0                                               npm     
 yaml                                               1.10.2                                              npm     
 zlib                                               1.2.13-r0                                           apk     
-zod                                                3.21.0                                              npm     
-zustand                                            4.3.5                                               npm     
+zod                                                3.21.2                                              npm     
+zustand                                            4.3.6                                               npm     
 zwitch                                             2.0.4                                               npm     
