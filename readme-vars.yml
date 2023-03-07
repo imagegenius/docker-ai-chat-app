@@ -3,7 +3,7 @@
 # project information
 project_name: ai-chat-app
 project_url: "https://github.com/bitswired/ai-chat-app"
-project_logo: "https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/ai-chat-app.png"
+project_logo: "https://raw.githubusercontent.com/bitswired/ai-chat-app/main/public/logo.png"
 project_blurb: "Open Source, Self-Hosted Chat GPT app"
 project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
@@ -42,7 +42,7 @@ app_setup_block_enabled: true
 app_setup_block: |
   The WebUI can be accessed at `http://your-ip:3000`, you must specify an OpenAI API Key in settings before using, go to `http://your-ip:3000/settings`, enter the API key, and press save.
 
-  This app is brand new, hence it is buggy. I need to create a new chat via the `Templates`, then I can start to make other chats.
+  Please report any issues with this app at [bitswired/ai-chat-app](https://github.com/bitswired/ai-chat-app/issues)!
 
 # changelog
 changelogs:
