@@ -9,7 +9,7 @@
 
 Open Source, Self-Hosted Chat GPT app
 
-[![ai-chat-app](https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/ai-chat-app.png)](https://github.com/bitswired/ai-chat-app)
+[![ai-chat-app](https://raw.githubusercontent.com/bitswired/ai-chat-app/main/public/logo.png)](https://github.com/bitswired/ai-chat-app)
 
 ## Supported Architectures
 
@@ -29,7 +29,7 @@ This image supports the following architectures:
 
 The WebUI can be accessed at `http://your-ip:3000`, you must specify an OpenAI API Key in settings before using, go to `http://your-ip:3000/settings`, enter the API key, and press save.
 
-This app is brand new, hence it is buggy. I need to create a new chat via the `Templates`, then I can start to make other chats.
+Please report any issues with this app at [bitswired/ai-chat-app](https://github.com/bitswired/ai-chat-app/issues)!
 
 ## Usage
 
