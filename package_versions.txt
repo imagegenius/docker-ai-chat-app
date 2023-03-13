@@ -76,10 +76,10 @@ NAME                                               VERSION                      
 @tanstack/query-core                               4.26.1                                              npm     
 @tanstack/react-query                              4.26.1                                              npm     
 @tootallnate/once                                  2.0.0                                               npm     
-@trpc/client                                       10.15.0                                             npm     
-@trpc/next                                         10.15.0                                             npm     
-@trpc/react-query                                  10.15.0                                             npm     
-@trpc/server                                       10.15.0                                             npm     
+@trpc/client                                       10.16.0                                             npm     
+@trpc/next                                         10.16.0                                             npm     
+@trpc/react-query                                  10.16.0                                             npm     
+@trpc/server                                       10.16.0                                             npm     
 @types/debug                                       4.1.7                                               npm     
 @types/hast                                        2.3.4                                               npm     
 @types/mdast                                       3.0.10                                              npm     
