@@ -9,7 +9,7 @@
 
 Open Source, Self-Hosted Chat GPT app
 
-[![ai-chat-app](https://raw.githubusercontent.com/bitswired/ai-chat-app/main/public/logo.png)](https://github.com/bitswired/ai-chat-app)
+[![ai-chat-app](https://raw.githubusercontent.com/bitswired/fuseai/main/public/logo.png)](https://github.com/bitswired/fuseai)
 
 ## Supported Architectures
 
@@ -27,11 +27,11 @@ This image supports the following architectures:
 
 ## Application Setup
 
-**This container is just a dockerised version of [bitswired/ai-chat-app](https://github.com/bitswired/ai-chat-app), Please report any issues with this app [here](https://github.com/bitswired/ai-chat-app/issues)!**
+**This container is just a dockerised version of [bitswired/fuseai](https://github.com/bitswired/fuseai), Please report any issues with this app [here](https://github.com/bitswired/fuseai/issues)!**
 
 The WebUI can be accessed at `http://your-ip:3000`, you must specify an OpenAI API Key in settings before using, go to `http://your-ip:3000/settings`, enter the API key, and press save.
 
-If you would like to setup multi-user support, use the `.env` template [here](https://github.com/bitswired/ai-chat-app/blob/main/.env.multi-user.example), and copy the other variables.
+If you would like to setup multi-user support, use the `.env` template [here](https://github.com/bitswired/fuseai/blob/main/.env.multi-user.example), and copy the other variables.
 
 ## Usage
 
