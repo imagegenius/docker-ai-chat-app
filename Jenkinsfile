@@ -16,7 +16,7 @@ pipeline {
     GITHUB_TOKEN=credentials('github_token')
     EXT_GIT_BRANCH = 'main'
     EXT_USER = 'bitswired'
-    EXT_REPO = 'ai-chat-app'
+    EXT_REPO = 'fuseai'
     BUILD_VERSION_ARG = 'APP_VERSION'
     IG_USER = 'imagegenius'
     IG_REPO = 'docker-ai-chat-app'
