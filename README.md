@@ -27,9 +27,11 @@ This image supports the following architectures:
 
 ## Application Setup
 
+**This container is just a dockerised version of [bitswired/ai-chat-app](https://github.com/bitswired/ai-chat-app), Please report any issues with this app [here](https://github.com/bitswired/ai-chat-app/issues)!**
+
 The WebUI can be accessed at `http://your-ip:3000`, you must specify an OpenAI API Key in settings before using, go to `http://your-ip:3000/settings`, enter the API key, and press save.
 
-Please report any issues with this app at [bitswired/ai-chat-app](https://github.com/bitswired/ai-chat-app/issues)!
+If you would like to setup multi-user support, use the `.env` template [here](https://github.com/bitswired/ai-chat-app/blob/main/.env.multi-user.example), and copy the other variables.
 
 ## Usage
 
@@ -48,6 +50,10 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
+      - NEXTAUTH_SECRET=secret
+      - NEXTAUTH_URL=http://192.168.1.2:3000
+      - ADMIN_EMAIL=example@me.com
+      - ADMIN_PASSWORD=password
     volumes:
       - path_to_appdata:/config
     ports:
@@ -63,6 +69,10 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
+  -e NEXTAUTH_SECRET=secret \
+  -e NEXTAUTH_URL=http://192.168.1.2:3000 \
+  -e ADMIN_EMAIL=example@me.com \
+  -e ADMIN_PASSWORD=password \
   -p 3000:3000 \
   -v path_to_appdata:/config \
   --restart unless-stopped \
@@ -80,6 +90,10 @@ To configure the container, pass variables at runtime using the format `<externa
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
+| `-e NEXTAUTH_SECRET=secret` | Used to encrypt the NextAuth.js JWT and to hash email verification tokens, set to something long and random. |
+| `-e NEXTAUTH_URL=http://192.168.1.2:3000` | Set this to the <IP>:<port> used to access the container. |
+| `-e ADMIN_EMAIL=example@me.com` | Email used to access the WebUI. |
+| `-e ADMIN_PASSWORD=password` | Password used to access the WebUI. |
 | `-v /config` | Contains the database |
 
 ## Umask for running applications
@@ -121,4 +135,5 @@ Instructions for updating containers:
 
 ## Versions
 
+* **19.03.23:** - Add mutli-user variables.
 * **05.03.23:** - Initial Release.
