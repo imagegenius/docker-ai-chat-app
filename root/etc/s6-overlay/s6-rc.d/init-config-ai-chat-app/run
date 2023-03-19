@@ -8,4 +8,5 @@ npx prisma migrate deploy &>/dev/null
 # permissions
 find /app/ai-chat-app -path "*/node_modules" -prune -o -exec chown abc:abc {} +
 chown -R abc:abc \
-    /config
+    /config \
+    /root
