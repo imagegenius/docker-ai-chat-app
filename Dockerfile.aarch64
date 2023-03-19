@@ -19,9 +19,9 @@ RUN \
     npm && \
   echo "**** install ai-chat-app ****" && \
   if [ -z ${APP_VERSION+x} ]; then \
-    APP_VERSION=$(curl -sL "https://api.github.com/repos/bitswired/ai-chat-app/commits?ref=main" | jq -r '.[0].sha' | cut -c1-8); \
+    APP_VERSION=$(curl -sL "https://api.github.com/repos/bitswired/fuseai/commits?ref=main" | jq -r '.[0].sha' | cut -c1-8); \
   fi && \
-  git clone https://github.com/bitswired/ai-chat-app.git /app/ai-chat-app && \
+  git clone https://github.com/bitswired/fuseai.git /app/ai-chat-app && \
   cd /app/ai-chat-app && \
   git checkout ${APP_VERSION} && \
   echo "**** build server ****" && \
