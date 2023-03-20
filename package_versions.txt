@@ -79,12 +79,12 @@ NAME                                               VERSION                      
 @tabler/icons                                      2.11.0                                              npm     
 @tabler/icons-react                                2.11.0                                              npm     
 @tanstack/query-core                               4.27.0                                              npm     
-@tanstack/react-query                              4.27.0                                              npm     
+@tanstack/react-query                              4.28.0                                              npm     
 @tootallnate/once                                  2.0.0                                               npm     
-@trpc/client                                       10.16.0                                             npm     
-@trpc/next                                         10.16.0                                             npm     
-@trpc/react-query                                  10.16.0                                             npm     
-@trpc/server                                       10.16.0                                             npm     
+@trpc/client                                       10.17.0                                             npm     
+@trpc/next                                         10.17.0                                             npm     
+@trpc/react-query                                  10.17.0                                             npm     
+@trpc/server                                       10.17.0                                             npm     
 @types/debug                                       4.1.7                                               npm     
 @types/hast                                        2.3.4                                               npm     
 @types/mdast                                       3.0.10                                              npm     
@@ -449,7 +449,7 @@ react-dom                                          18.2.0                       
 react-dom                                          18.3.0-next-3706edb81-20230308                      npm     
 react-is                                           16.13.1                                             npm     
 react-is                                           18.2.0                                              npm     
-react-markdown                                     8.0.5                                               npm     
+react-markdown                                     8.0.6                                               npm     
 react-property                                     2.0.0                                               npm     
 react-refresh                                      0.12.0                                              npm     
 react-remove-scroll                                2.5.5                                               npm     
