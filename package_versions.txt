@@ -87,7 +87,7 @@ NAME                                               VERSION                      
 @trpc/server                                       10.17.0                                             npm     
 @types/debug                                       4.1.7                                               npm     
 @types/hast                                        2.3.4                                               npm     
-@types/mdast                                       3.0.10                                              npm     
+@types/mdast                                       3.0.11                                              npm     
 @types/ms                                          0.7.31                                              npm     
 @types/parse-json                                  4.0.0                                               npm     
 @types/prop-types                                  15.7.5                                              npm     
