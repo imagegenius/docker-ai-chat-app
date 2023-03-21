@@ -135,5 +135,6 @@ Instructions for updating containers:
 
 ## Versions
 
+* **21.03.23:** - Add service checks
 * **19.03.23:** - Add mutli-user variables.
 * **05.03.23:** - Initial Release.
