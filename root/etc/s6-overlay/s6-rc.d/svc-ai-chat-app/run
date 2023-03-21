@@ -1,7 +1,6 @@
 #!/usr/bin/with-contenv bash
-# shellcheck shell=bash
 
-cd /app/ai-chat-app
-
-exec s6-setuidgid abc \
-    npm start
+exec \
+    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z 127.0.0.1 3000" \
+        cd /app/ai-chat-app s6-setuidgid abc \
+            npm start

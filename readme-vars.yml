@@ -54,5 +54,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "21.03.23:", desc: "Add service checks" }
   - { date: "19.03.23:", desc: "Add mutli-user variables." }
   - { date: "05.03.23:", desc: "Initial Release." }
