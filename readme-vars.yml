@@ -4,7 +4,7 @@
 project_name: ai-chat-app
 project_url: "https://github.com/bitswired/fuseai"
 project_logo: "https://raw.githubusercontent.com/bitswired/fuseai/main/public/logo.png"
-project_blurb: "Open Source, Self-Hosted Chat GPT app"
+project_blurb: "ai-chat-app - Open Source, Self-Hosted Chat GPT app"
 project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
 
