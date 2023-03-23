@@ -7,7 +7,7 @@
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-ai-chat-app%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-ai-chat-app/job/main/)
 [![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fai-chat-app%2Flatest-main%2Fci-status.yml)](https://ci-tests.imagegenius.io/ai-chat-app/latest-main/index.html)
 
-[Ai-chat-app](https://github.com/bitswired/fuseai) - Open Source, Self-Hosted Chat GPT app
+[ai-chat-app](https://github.com/bitswired/fuseai) - - Open Source, Self-Hosted Chat GPT app
 
 [![ai-chat-app](https://raw.githubusercontent.com/bitswired/fuseai/main/public/logo.png)](https://github.com/bitswired/fuseai)
 
