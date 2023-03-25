@@ -91,7 +91,7 @@ NAME                                               VERSION                      
 @types/ms                                          0.7.31                                              npm     
 @types/parse-json                                  4.0.0                                               npm     
 @types/prop-types                                  15.7.5                                              npm     
-@types/react                                       18.0.28                                             npm     
+@types/react                                       18.0.29                                             npm     
 @types/scheduler                                   0.16.3                                              npm     
 @types/unist                                       2.0.6                                               npm     
 abbrev                                             1.1.1                                               npm     
