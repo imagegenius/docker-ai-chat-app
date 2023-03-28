@@ -21,6 +21,6 @@ repo_vars:
   - CI_PORT = '3000'
   - CI_SSL = 'false'
   - CI_DELAY = '30'
-  - CI_DOCKERENV = 'NEXTAUTH_SECRET=secret'
+  - CI_DOCKERENV = 'TEST_RUN=true|NEXTAUTH_SECRET=secret'
   - CI_AUTH = ''
   - CI_WEBPATH = ''
