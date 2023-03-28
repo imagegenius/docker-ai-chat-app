@@ -7,7 +7,7 @@
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-ai-chat-app%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-ai-chat-app/job/main/)
 [![IG CI](https://img.shields.io/badge/dynamic/yaml?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.imagegenius.io%2Fai-chat-app%2Flatest-main%2Fci-status.yml)](https://ci-tests.imagegenius.io/ai-chat-app/latest-main/index.html)
 
-[ai-chat-app](https://github.com/bitswired/fuseai) - Open Source, Self-Hosted Chat GPT app
+[ai-chat-app](https://github.com/bitswired/fuseai) - Open Source, Self-Hosted ChatGPT app
 
 [![ai-chat-app](https://raw.githubusercontent.com/bitswired/fuseai/main/public/logo.png)](https://github.com/bitswired/fuseai)
 
@@ -91,7 +91,7 @@ To configure the container, pass variables at runtime using the format `<externa
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e NEXTAUTH_SECRET=secret` | Used to encrypt the NextAuth.js JWT and to hash email verification tokens, set to something long and random. |
-| `-e NEXTAUTH_URL=http://192.168.1.2:3000` | Set this to the <IP>:<port> used to access the container. |
+| `-e NEXTAUTH_URL=http://192.168.1.2:3000` | Set this to the IP:port used to access the container. |
 | `-e ADMIN_EMAIL=example@me.com` | Email used to access the WebUI. |
 | `-e ADMIN_PASSWORD=password` | Password used to access the WebUI. |
 | `-v /config` | Contains the database |
@@ -135,6 +135,7 @@ Instructions for updating containers:
 
 ## Versions
 
+* **28.03.23:** - Add variable checks
 * **21.03.23:** - Add service checks
 * **19.03.23:** - Add mutli-user variables.
 * **05.03.23:** - Initial Release.
