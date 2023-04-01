@@ -76,8 +76,8 @@ NAME                                               VERSION                      
 @radix-ui/react-use-callback-ref                   1.0.0                                               npm     
 @radix-ui/react-use-layout-effect                  1.0.0                                               npm     
 @swc/helpers                                       0.4.14                                              npm     
-@tabler/icons                                      2.13.0                                              npm     
-@tabler/icons-react                                2.13.0                                              npm     
+@tabler/icons                                      2.13.1                                              npm     
+@tabler/icons-react                                2.13.1                                              npm     
 @tanstack/query-core                               4.27.0                                              npm     
 @tanstack/react-query                              4.28.0                                              npm     
 @tootallnate/once                                  2.0.0                                               npm     
