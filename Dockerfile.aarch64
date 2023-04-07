@@ -13,10 +13,11 @@ ENV DATABASE_URL="file:/config/db.sqlite"
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
-    git && \  
+    git \
+    npm && \  
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    npm && \
+    yarn && \
   echo "**** install ai-chat-app ****" && \
   if [ -z ${APP_VERSION+x} ]; then \
     APP_VERSION=$(curl -sL "https://api.github.com/repos/bitswired/fuseai/commits?ref=main" | jq -r '.[0].sha' | cut -c1-8); \
@@ -25,9 +26,8 @@ RUN \
   cd /app/ai-chat-app && \
   git checkout ${APP_VERSION} && \
   echo "**** build server ****" && \
-  npm install && \
-  npm ci && \
-  npm run build && \
+  yarn && \
+  yarn build && \
   npm prune --omit=dev --omit=optional && \
   npm cache clean --force && \
   echo "**** cleanup ****" && \
