@@ -2,7 +2,7 @@
 
 # initialise database
 cd /app/ai-chat-app
-npx prisma migrate deploy &>/dev/null
+yarn prisma migrate deploy
 
 # permissions
 find /app/ai-chat-app -path "*/node_modules" -prune -o -exec chown abc:abc {} +
