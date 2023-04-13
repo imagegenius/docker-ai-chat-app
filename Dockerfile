@@ -36,7 +36,8 @@ RUN \
   rm -rf \
     /tmp/* \
     /root/.npm \
-    /root/.cache
+    /root/.cache \
+    /usr/local/share/.cache
 
 # environment settings
 ENV NODE_ENV="production"
