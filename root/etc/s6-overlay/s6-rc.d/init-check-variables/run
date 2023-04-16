@@ -1,17 +1,15 @@
 #!/usr/bin/with-contenv bash
 
-VARIABLES=("NEXTAUTH_SECRET" "NEXTAUTH_URL" "ADMIN_EMAIL" "ADMIN_PASSWORD")
-MESSAGES=("No JWT Secret has been specified in the NEXTAUTH_SECRET variable."
-"No NextAuth URL has been specified in the NEXTAUTH_URL variable."
-"No Admin Email address has been specified in the ADMIN_EMAIL variable."
-"No Admin Password has been specified in the ADMIN_PASSWORD variable.")
+check_var() {
+    if [ -z "${!1}" ]; then
+        echo "Error: No ${2} has been specified in the '${1}' variable. ${3}"
+        echo "For more information, see the README: https://github.com/imagegenius/docker-ai-chat-app#variables"
+        sleep infinity
+    fi
+}
 
-if [[ -z "${TEST_RUN}" ]]; then
-    for i in ${!VARIABLES[@]}; do
-        if [ -z "${!VARIABLES[$i]}" ]; then
-            echo "Error: ${MESSAGES[$i]}"
-            echo "See the readme for more information: https://github.com/imagegenius/docker-ai-chat-app#variables"
-            sleep infinity
-        fi
-    done
-fi
+#         Variable          Variable Summary
+check_var "NEXTAUTH_SECRET" "JWT secret"
+check_var "NEXTAUTH_URL"    "NextAuth URL"
+check_var "ADMIN_EMAIL"     "admin email"
+check_var "ADMIN_PASSWORD"  "admin password"

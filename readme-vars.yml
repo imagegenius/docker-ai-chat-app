@@ -10,8 +10,8 @@ project_blurb_optional_extras_enabled: false
 
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest" }
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest" }
 
 # container parameters
 common_param_env_vars_enabled: true
@@ -19,7 +19,6 @@ param_container_name: "{{ project_name }}"
 param_usage_include_net: false
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "TZ", env_value: "Australia/Melbourne", desc: "Specify a timezone to use eg. Australia/Melbourne." }
   - { env_var: "NEXTAUTH_SECRET", env_value: "secret", desc: "Used to encrypt the NextAuth.js JWT and to hash email verification tokens, set to something long and random." }
   - { env_var: "NEXTAUTH_URL", env_value: "http://192.168.1.2:3000", desc: "Set this to the IP:port used to access the container." }
   - { env_var: "ADMIN_EMAIL", env_value: "example@me.com", desc: "Email used to access the WebUI." }
