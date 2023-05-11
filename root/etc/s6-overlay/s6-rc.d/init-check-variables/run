@@ -8,8 +8,10 @@ check_var() {
     fi
 }
 
-#         Variable          Variable Summary
-check_var "NEXTAUTH_SECRET" "JWT secret"
-check_var "NEXTAUTH_URL"    "NextAuth URL"
-check_var "ADMIN_EMAIL"     "admin email"
-check_var "ADMIN_PASSWORD"  "admin password"
+if [[ -z "${TEST_RUN}" ]]; then # skip if test run
+    #         Variable          Variable Summary
+    check_var "NEXTAUTH_SECRET" "JWT secret"
+    check_var "NEXTAUTH_URL"    "NextAuth URL"
+    check_var "ADMIN_EMAIL"     "admin email"
+    check_var "ADMIN_PASSWORD"  "admin password"
+fi
