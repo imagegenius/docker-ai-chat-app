@@ -22,7 +22,7 @@ pipeline {
     IG_REPO = 'docker-ai-chat-app'
     CONTAINER_NAME = 'ai-chat-app'
     DIST_IMAGE = 'alpine'
-    MULTIARCH = 'true'
+    MULTIARCH = 'false'
     CI = 'true'
     CI_WEB = 'true'
     CI_PORT = '3000'
