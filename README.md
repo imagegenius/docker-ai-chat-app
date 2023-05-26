@@ -22,7 +22,7 @@ This image supports the following architectures:
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
-| arm64 | ✅ | arm64v8-\<version tag\> |
+| arm64 | ❌ | |
 | armhf | ❌ | |
 
 ## Application Setup
