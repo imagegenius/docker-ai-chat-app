@@ -135,6 +135,7 @@ Instructions for updating containers:
 
 ## Versions
 
+* **01.06.23:** - pin next and next-auth
 * **28.03.23:** - Add variable checks
 * **21.03.23:** - Add service checks
 * **19.03.23:** - Add mutli-user variables.
