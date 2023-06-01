@@ -1,11 +1,11 @@
 #!/usr/bin/with-contenv bash
 
 # initialise database
-cd /app/ai-chat-app
+cd /app/fuseai
 npx prisma migrate deploy &>/dev/null
 
 # permissions
-find /app/ai-chat-app -path "*/node_modules" -prune -o -exec chown abc:abc {} +
+find /app/fuseai -path "*/node_modules" -prune -o -exec chown abc:abc {} +
 chown -R abc:abc \
     /config \
     /root

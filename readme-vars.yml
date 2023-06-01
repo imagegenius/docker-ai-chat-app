@@ -52,6 +52,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "01.06.23:", desc: "pin next and next-auth" }
   - { date: "28.03.23:", desc: "Add variable checks" }
   - { date: "21.03.23:", desc: "Add service checks" }
   - { date: "19.03.23:", desc: "Add mutli-user variables." }

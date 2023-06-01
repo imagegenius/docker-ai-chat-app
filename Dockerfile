@@ -17,14 +17,17 @@ RUN \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     npm && \
-  echo "**** install ai-chat-app ****" && \
+  echo "**** install fuseai ****" && \
   if [ -z ${APP_VERSION+x} ]; then \
     APP_VERSION=$(curl -sL "https://api.github.com/repos/bitswired/fuseai/commits?ref=main" | jq -r '.[0].sha' | cut -c1-8); \
   fi && \
-  git clone https://github.com/bitswired/fuseai.git /app/ai-chat-app && \
-  cd /app/ai-chat-app && \
+  git clone https://github.com/bitswired/fuseai.git /app/fuseai && \
+  cd /app/fuseai && \
   git checkout ${APP_VERSION} && \
   echo "**** build server ****" && \
+  sed -i \
+    's/"next": "^13.2.1"/"next": "13.4.3"/; s/"next-auth": "^4.20.1"/"next-auth": "4.22.1"/' \
+    package.json && \
   npm install && \
   npm ci && \
   npm run build && \
