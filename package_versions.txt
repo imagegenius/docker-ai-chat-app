@@ -79,8 +79,8 @@ NAME                                               VERSION                      
 @radix-ui/react-use-layout-effect                  1.0.0                                              npm     
 @sigstore/protobuf-specs                           0.1.0                                              npm     
 @swc/helpers                                       0.5.1                                              npm     
-@tabler/icons                                      2.24.0                                             npm     
-@tabler/icons-react                                2.24.0                                             npm     
+@tabler/icons                                      2.25.0                                             npm     
+@tabler/icons-react                                2.25.0                                             npm     
 @tanstack/query-core                               4.29.19                                            npm     
 @tanstack/react-query                              4.29.19                                            npm     
 @tootallnate/once                                  2.0.0                                              npm     
@@ -249,8 +249,8 @@ http-proxy-agent                                   5.0.0                        
 https-proxy-agent                                  5.0.1                                              npm     
 humanize-ms                                        1.2.1                                              npm     
 iconv-lite                                         0.6.3                                              npm     
-icu-data-en                                        73.2-r1                                            apk     
-icu-libs                                           73.2-r1                                            apk     
+icu-data-en                                        73.2-r2                                            apk     
+icu-libs                                           73.2-r2                                            apk     
 ieee754                                            1.2.1                                              npm     
 ignore-walk                                        6.0.3                                              npm     
 import-fresh                                       3.3.0                                              npm     
