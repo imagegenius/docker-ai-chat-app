@@ -5,7 +5,7 @@ NAME                                               VERSION                      
 @babel/helper-validator-identifier                 7.22.20                                            npm   
 @babel/highlight                                   7.22.20                                            npm   
 @babel/runtime                                     7.15.4                                             npm   
-@babel/runtime                                     7.23.1                                             npm   
+@babel/runtime                                     7.23.2                                             npm   
 @babel/types                                       7.23.0                                             npm   
 @colors/colors                                     1.5.0                                              npm   
 @edge-runtime/cookies                              3.0.6                                              npm   
@@ -80,15 +80,15 @@ NAME                                               VERSION                      
 @radix-ui/react-use-layout-effect                  1.0.0                                              npm   
 @sigstore/protobuf-specs                           0.1.0                                              npm   
 @swc/helpers                                       0.5.1                                              npm   
-@tabler/icons                                      2.38.0                                             npm   
-@tabler/icons-react                                2.38.0                                             npm   
-@tanstack/query-core                               4.35.7                                             npm   
-@tanstack/react-query                              4.35.7                                             npm   
+@tabler/icons                                      2.39.0                                             npm   
+@tabler/icons-react                                2.39.0                                             npm   
+@tanstack/query-core                               4.36.1                                             npm   
+@tanstack/react-query                              4.36.1                                             npm   
 @tootallnate/once                                  2.0.0                                              npm   
-@trpc/client                                       10.38.5                                            npm   
-@trpc/next                                         10.38.5                                            npm   
-@trpc/react-query                                  10.38.5                                            npm   
-@trpc/server                                       10.38.5                                            npm   
+@trpc/client                                       10.40.0                                            npm   
+@trpc/next                                         10.40.0                                            npm   
+@trpc/react-query                                  10.40.0                                            npm   
+@trpc/server                                       10.40.0                                            npm   
 @tufjs/canonical-json                              1.0.0                                              npm   
 @tufjs/models                                      1.0.4                                              npm   
 @types/debug                                       4.1.9                                              npm   
@@ -97,7 +97,7 @@ NAME                                               VERSION                      
 @types/ms                                          0.7.32                                             npm   
 @types/parse-json                                  4.0.0                                              npm   
 @types/prop-types                                  15.7.8                                             npm   
-@types/react                                       18.2.25                                            npm   
+@types/react                                       18.2.28                                            npm   
 @types/scheduler                                   0.16.4                                             npm   
 @types/unist                                       2.0.8                                              npm   
 abbrev                                             1.1.1                                              npm   
@@ -110,7 +110,7 @@ aggregate-error                                    3.1.0                        
 alpine-baselayout                                  3.4.3-r1                                           apk   
 alpine-baselayout-data                             3.4.3-r1                                           apk   
 alpine-keys                                        2.4-r1                                             apk   
-alpine-release                                     3.18.3-r0                                          apk   
+alpine-release                                     3.18.4-r0                                          apk   
 ansi-regex                                         5.0.1                                              npm   
 ansi-regex                                         6.0.1                                              npm   
 ansi-styles                                        3.2.1                                              npm   
@@ -146,7 +146,7 @@ ca-certificates-bundle                             20230506-r0                  
 cacache                                            16.1.3                                             npm   
 cacache                                            17.1.0                                             npm   
 callsites                                          3.1.0                                              npm   
-caniuse-lite                                       1.0.30001543                                       npm   
+caniuse-lite                                       1.0.30001547                                       npm   
 ccount                                             2.0.1                                              npm   
 chalk                                              2.4.2                                              npm   
 chalk                                              4.1.2                                              npm   
@@ -279,7 +279,7 @@ isarray                                            0.0.1                        
 isarray                                            1.0.0                                              npm   
 isexe                                              2.0.0                                              npm   
 jackspeak                                          2.2.0                                              npm   
-jose                                               4.15.2                                             npm   
+jose                                               4.15.3                                             npm   
 jq                                                 1.6-r3                                             apk   
 js-tokens                                          4.0.0                                              npm   
 json-parse-even-better-errors                      2.3.1                                              npm   
@@ -320,6 +320,7 @@ libunistring                                       1.1-r1                       
 libuv                                              1.44.2-r2                                          apk   
 lines-and-columns                                  1.2.4                                              npm   
 linux-pam                                          1.5.2-r10                                          apk   
+ljharb-monorepo-symlink-test                       0.0.0                                              npm   
 longest-streak                                     3.1.0                                              npm   
 loose-envify                                       1.4.0                                              npm   
 lru-cache                                          6.0.0                                              npm   
@@ -386,7 +387,6 @@ minipass-pipeline                                  1.2.4                        
 minipass-sized                                     1.0.3                                              npm   
 minizlib                                           2.1.2                                              npm   
 mkdirp                                             1.0.4                                              npm   
-monorepo-symlink-test                              0.0.0                                              npm   
 mri                                                1.2.0                                              npm   
 ms                                                 2.1.2                                              npm   
 ms                                                 2.1.3                                              npm   
@@ -404,7 +404,7 @@ next-auth                                          4.22.1                       
 nghttp2-libs                                       1.55.1-r0                                          apk   
 node-gyp                                           9.3.1                                              npm   
 nodejs-current                                     20.5.0-r0                                          apk   
-nodemailer                                         6.9.5                                              npm   
+nodemailer                                         6.9.6                                              npm   
 nopt                                               6.0.0                                              npm   
 nopt                                               7.1.0                                              npm   
 normalize-package-data                             5.0.0                                              npm   
@@ -430,7 +430,7 @@ oidc-token-hash                                    5.0.3                        
 once                                               1.4.0                                              npm   
 oniguruma                                          6.9.8-r1                                           apk   
 openai                                             3.3.0                                              npm   
-openid-client                                      5.6.0                                              npm   
+openid-client                                      5.6.1                                              npm   
 p-map                                              4.0.0                                              npm   
 pacote                                             15.1.3                                             npm   
 parent-module                                      1.0.1                                              npm   
@@ -472,7 +472,7 @@ react-is                                           18.2.0                       
 react-markdown                                     8.0.7                                              npm   
 react-property                                     2.0.0                                              npm   
 react-refresh                                      0.12.0                                             npm   
-react-remove-scroll                                2.5.6                                              npm   
+react-remove-scroll                                2.5.7                                              npm   
 react-remove-scroll-bar                            2.3.4                                              npm   
 react-ssr-prepass                                  1.5.0                                              npm   
 react-style-singleton                              2.2.1                                              npm   
@@ -492,7 +492,7 @@ regenerator-runtime                                0.14.0                       
 remark-gfm                                         3.0.1                                              npm   
 remark-parse                                       10.0.2                                             npm   
 remark-rehype                                      10.1.0                                             npm   
-resolve                                            1.22.6                                             npm   
+resolve                                            1.22.8                                             npm   
 resolve-from                                       4.0.0                                              npm   
 retry                                              0.12.0                                             npm   
 rimraf                                             3.0.2                                              npm   
@@ -595,5 +595,5 @@ yaml                                               1.10.2                       
 zlib                                               1.2.13-r1                                          apk   
 zod                                                3.21.4                                             npm   
 zod                                                3.22.4                                             npm   
-zustand                                            4.4.2                                              npm   
+zustand                                            4.4.3                                              npm   
 zwitch                                             2.0.4                                              npm   
