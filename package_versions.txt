@@ -1,12 +1,12 @@
 NAME                                               VERSION                                            TYPE 
-@babel/code-frame                                  7.23.4                                             npm   
+@babel/code-frame                                  7.23.5                                             npm   
 @babel/helper-module-imports                       7.22.15                                            npm   
 @babel/helper-string-parser                        7.23.4                                             npm   
 @babel/helper-validator-identifier                 7.22.20                                            npm   
 @babel/highlight                                   7.23.4                                             npm   
 @babel/runtime                                     7.15.4                                             npm   
-@babel/runtime                                     7.23.4                                             npm   
-@babel/types                                       7.23.4                                             npm   
+@babel/runtime                                     7.23.5                                             npm   
+@babel/types                                       7.23.5                                             npm   
 @colors/colors                                     1.5.0                                              npm   
 @edge-runtime/cookies                              3.0.6                                              npm   
 @edge-runtime/primitives                           2.1.2                                              npm   
@@ -85,10 +85,10 @@ NAME                                               VERSION                      
 @tanstack/query-core                               4.36.1                                             npm   
 @tanstack/react-query                              4.36.1                                             npm   
 @tootallnate/once                                  2.0.0                                              npm   
-@trpc/client                                       10.44.0                                            npm   
-@trpc/next                                         10.44.0                                            npm   
-@trpc/react-query                                  10.44.0                                            npm   
-@trpc/server                                       10.44.0                                            npm   
+@trpc/client                                       10.44.1                                            npm   
+@trpc/next                                         10.44.1                                            npm   
+@trpc/react-query                                  10.44.1                                            npm   
+@trpc/server                                       10.44.1                                            npm   
 @tufjs/canonical-json                              1.0.0                                              npm   
 @tufjs/models                                      1.0.4                                              npm   
 @types/debug                                       4.1.12                                             npm   
@@ -97,7 +97,7 @@ NAME                                               VERSION                      
 @types/ms                                          0.7.34                                             npm   
 @types/parse-json                                  4.0.2                                              npm   
 @types/prop-types                                  15.7.11                                            npm   
-@types/react                                       18.2.38                                            npm   
+@types/react                                       18.2.39                                            npm   
 @types/scheduler                                   0.16.8                                             npm   
 @types/unist                                       2.0.10                                             npm   
 abbrev                                             1.1.1                                              npm   
@@ -146,7 +146,7 @@ ca-certificates-bundle                             20230506-r0                  
 cacache                                            16.1.3                                             npm   
 cacache                                            17.1.0                                             npm   
 callsites                                          3.1.0                                              npm   
-caniuse-lite                                       1.0.30001564                                       npm   
+caniuse-lite                                       1.0.30001565                                       npm   
 ccount                                             2.0.1                                              npm   
 chalk                                              2.4.2                                              npm   
 chalk                                              4.1.2                                              npm   
@@ -596,5 +596,5 @@ yaml                                               1.10.2                       
 zlib                                               1.2.13-r1                                          apk   
 zod                                                3.21.4                                             npm   
 zod                                                3.22.4                                             npm   
-zustand                                            4.4.6                                              npm   
+zustand                                            4.4.7                                              npm   
 zwitch                                             2.0.4                                              npm   
