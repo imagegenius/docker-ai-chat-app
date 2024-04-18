@@ -97,7 +97,7 @@ NAME                                               VERSION                      
 @types/ms                                          0.7.34                                             npm                    
 @types/parse-json                                  4.0.2                                              npm                    
 @types/prop-types                                  15.7.12                                            npm                    
-@types/react                                       18.2.75                                            npm                    
+@types/react                                       18.2.79                                            npm                    
 @types/unist                                       2.0.10                                             npm                    
 abbrev                                             1.1.1                                              npm                    
 abbrev                                             2.0.0                                              npm                    
@@ -115,7 +115,7 @@ ansi-regex                                         6.0.1                        
 ansi-styles                                        3.2.1                                              npm                    
 ansi-styles                                        4.3.0                                              npm                    
 ansi-styles                                        6.2.1                                              npm                    
-apk-tools                                          2.14.0-r2                                          apk                    
+apk-tools                                          2.14.3-r1                                          apk                    
 aproba                                             2.0.0                                              npm                    
 archy                                              1.0.0                                              npm                    
 are-we-there-yet                                   3.0.1                                              npm                    
@@ -145,7 +145,7 @@ ca-certificates-bundle                             20240226-r0                  
 cacache                                            16.1.3                                             npm                    
 cacache                                            17.1.0                                             npm                    
 callsites                                          3.1.0                                              npm                    
-caniuse-lite                                       1.0.30001608                                       npm                    
+caniuse-lite                                       1.0.30001610                                       npm                    
 ccount                                             2.0.1                                              npm                    
 chalk                                              2.4.2                                              npm                    
 chalk                                              4.1.2                                              npm                    
