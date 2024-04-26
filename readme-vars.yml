@@ -1,5 +1,4 @@
 ---
-
 # project information
 project_name: ai-chat-app
 project_url: "https://github.com/bitswired/fuseai"
@@ -7,6 +6,10 @@ project_logo: "https://raw.githubusercontent.com/bitswired/fuseai/main/public/lo
 project_blurb: "ai-chat-app - Open Source, Self-Hosted ChatGPT app"
 project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
+
+project_deprecation_status: true
+project_deprecation_message: |
+  Upstream project is d-e-a-d.
 
 # supported architectures
 available_architectures:
@@ -48,10 +51,9 @@ app_setup_block: |
 
   If you would like to setup multi-user support, use the `.env` template [here](https://github.com/bitswired/fuseai/blob/main/.env.multi-user.example), and copy the other variables.
 
-  
-
 # changelog
 changelogs:
+  - { date: "26.04.24:", desc: "Deprecate" }
   - { date: "01.06.23:", desc: "pin next and next-auth" }
   - { date: "28.03.23:", desc: "Add variable checks" }
   - { date: "21.03.23:", desc: "Add service checks" }
